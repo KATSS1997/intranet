@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style_login.css">
+<body>
+    <!-- Logo no topo da página -->
+    <img src="imagens/FUNDO_AZUL.png" alt="Logo do site" class="logo">
+
+    <div class="login-container">
+        <h1>INTRANET</h1>
+        <h2>Boas-vindas</h2>
+
+        <form action="/login" method="POST">
+            <input type="text" id="login" name="login" placeholder="Digite seu login" required>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            <input type="submit" value="Entrar">       
+
+            <div class="forgot-password">
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Hospital Da Baleia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

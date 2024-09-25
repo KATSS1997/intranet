@@ -1,0 +1,172 @@
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('imagens/NORMAL.png');
+            background-position-y:70%;
+            background-color: #f0f4ff; /* Azul claro suave */
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #333;
+        }
+
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-track {
+    background-color:none; /* Cor de fundo do trilho */
+    border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+    background-color: #37a994; /* Cor do polegar */
+    border-radius: 6px; /* Bordas arredondadas */
+    border: 3px solid #f0f4ff;
+}
+
+
+        header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #2A3D8C; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header.scrolled {
+    background-color: #051649; /* Cor mais escura ao rolar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao rolar */
+}
+
+        
+
+        header a {
+            color: #f0f4ff;
+            text-decoration: none;
+            margin-right: 20px;
+            font-family: 'Arial', sans-serif;
+            font-weight: 600;
+        }
+
+        header a:hover {
+            color: #37a994; /* Cor de destaque ao passar o mouse */
+        }
+
+        .header-icon {
+            width: 80px;
+            height: 77px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 34px;
+            color: #f0f4ff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0px auto 0 auto;
+            padding: 40px;
+        }
+
+        .grid {
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            opacity: 0.9;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .comunicado {
+            background-color: #ffffff;
+            opacity: 0.9;
+            text-align: center;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        }
+
+        .comunicado a {
+            color: #2A3D8C;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .comunicado:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+        }    
+
+        .comunicado a:hover {
+            color: #37a994; /* Destaque ao passar o mouse */
+        }
+        
+        .comunicado h2 {
+            margin-top: 0;
+            color: #2A3D8C;
+            font-size: 22px;
+        }    
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #2A3D8C; /* Azul escuro */
+            font-size: 22px;
+        }
+
+        .card.a, .card ul {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .card a {
+            color: #2A3D8C;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .card a:hover {
+            color: #37a994; /* Destaque ao passar o mouse */
+        }
+
+        footer {
+            position:static;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #37a994;
+            color: #f0f4ff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            color: #f0f4ff;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
